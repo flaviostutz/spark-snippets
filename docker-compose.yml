@@ -8,7 +8,7 @@ services:
     ports:
       - 8888:8888
       - 6006:6006
-      - 4040:4040
+      - 4040-4050:4040-4050
     #this is useful during development so that you can manipulate 
     #notebook files for git commiting with your host tools.
     #the final package must have this content added to the container itself
@@ -28,6 +28,7 @@ services:
     environment:
       - INIT_DAEMON_STEP=setup_spark
       - SPARK_PUBLIC_DNS=localhost
+      - SPARK_MASTER_OPTS="-Dspark.deploy.defaultCores=2"
 
   spark-worker:
     image: bde2020/spark-worker:2.4.5-hadoop2.7
