@@ -1,6 +1,17 @@
 # spark-snippets
 Various Spark code snippets that may be useful for you. Mainly utilities for common tasks.
 
+Things you would find here
+
+* Spark Scala on Jupyter
+* Save Dataframe (SQL) to Kafka topic
+* Spark running fat jar shared among Spark Workers using HDFS
+* Geolocation obfuscation algorithm
+* Load CSV from local file system and to/from partitioned HDFS
+* Kafka Cluster using Docker
+* HDFS Cluster using Docker
+* Spark Cluster using Docker
+
 ## Snippets
 
 * [Geo Samples Obfuscation](/notebooks/obfuscate-geo-samples)
@@ -48,3 +59,4 @@ spark.stop()
 ```docker-compose up --scale spark-worker=5```
 
 * For an example of clustered HDFS with multiple namenodes/datanodes, go to https://github.com/flaviostutz/spark-scala-hdfs-docker-example/blob/master/docker-compose.yml
+

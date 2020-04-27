@@ -1,8 +1,5 @@
 package app
 
-import org.apache.spark.SparkConf
-import org.apache.spark.sql.SparkSession
-
 class Point(xc: Int, yc: Int) {
    var x: Int = xc
    var y: Int = yc
